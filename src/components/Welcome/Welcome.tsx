@@ -6,7 +6,7 @@ function Welcome() {
         <p>Seja bem-vindo(a) à biblioteca.</p>
         <p>Para ter uma melhor experiência, faça o login no sistema.</p>
         </main>
-    )
+    );
 
 }
 

@@ -7,7 +7,7 @@ function Cabecalho() {
             <img src={logotipo} alt="logotipo" />
             <a href="#">Login</a>
         </header>
-    )
+    );
 }
 
 export default Cabecalho;
