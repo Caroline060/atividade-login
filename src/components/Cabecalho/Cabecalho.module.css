@@ -10,9 +10,8 @@
     align-items: center;
 }
 
-.cabecalho h1 {
-    color: var(--branco);
-    margin-left: 5%;
+.cabecalho img {
+    height: 100%;
 }
 
 .cabecalho a {
