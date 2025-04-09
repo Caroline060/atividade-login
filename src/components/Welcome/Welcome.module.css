@@ -7,11 +7,11 @@
 
     color: var(--cor-primaria);
 
-    margin: 6% 0;
+    margin: 10% 0;
 }
 
 .principal p:last-child {
-    font-size: 1.8rem;
+    font-size: 2rem;
 
     color: var(--cor-primaria);
 }

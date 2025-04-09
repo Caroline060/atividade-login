@@ -1,31 +1,22 @@
-import estilo from "./Welcome.module.css";
-import AlunoRequests from "../../fetch/AlunoRequests";
-import { useEffect, useState } from "react";
+// Importa o tipo JSX do React para tipar corretamente o retorno do componente
+import { JSX } from 'react';
 
+// Importa os estilos CSS específicos para o componente Welcome
+import estilo from './Welcome.module.css';
 
-function Welcome() {
-        const [alunos, setAlunos] = useState([]); //nome da variável e o método
-    
-        useEffect(() => {
-            const fetchAlunos = async () => {
-                try {
-                    const listaDeAlunos = await AlunoRequests.listarAlunos();
-                    setAlunos(listaDeAlunos);
-                } catch (error) {
-                    console.error(`Erro ao buscar alunos: ${error}`);
-                    
-                }
-            };
-            fetchAlunos();
-        }, [alunos]);
-    
-    return(
+// Declara o componente funcional Welcome, que retorna uma estrutura JSX
+function Welcome(): JSX.Element {
+    return (
+        // Elemento principal da página com classe de estilo personalizada
         <main className={estilo.principal}>
-        <p>Seja bem-vindo(a) à biblioteca.</p>
-        <p>Para ter uma melhor experiência, faça o login no sistema.</p>
+            {/* Mensagem de boas-vindas ao usuário */}
+            <p>Seja bem-vindo(a) à biblioteca.</p>
+
+            {/* Mensagem orientando o usuário a fazer login */}
+            <p>Para ter uma melhor experiência, faça o login no sistema</p>
         </main>
     );
-
 }
 
+// Exporta o componente para que possa ser utilizado em outras partes do projeto
 export default Welcome;

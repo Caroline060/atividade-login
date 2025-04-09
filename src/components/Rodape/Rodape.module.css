@@ -7,11 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .rodape p {
-    color: var(--branco);
+    color: var(--branco-suave);
     font-size: 1.5rem;
 }
 
